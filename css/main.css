@@ -101,10 +101,9 @@ li {
     background-color: #fff;
     position: fixed;
     top: 90px;
-    right: 0;
+    right: -1000px;
     flex-direction: column;
     z-index: 9999999;
-    display: none;
   }
   #header .menu-area .nav-item {
     width: 100%;
@@ -163,4 +162,8 @@ li {
 }
 .download-section .col {
   flex: 0 0 auto !important;
+}
+
+.active-menu {
+  right: 0 !important;
 }/*# sourceMappingURL=main.css.map */

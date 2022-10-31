@@ -29,6 +29,8 @@
         }
 
 
+
+
         @include Large(){
             width: 100%;
             max-width: 500px;
@@ -36,10 +38,9 @@
             background-color: #fff;
             position: fixed;
             top: 90px;
-            right: 0;
+            right: -1000px;
             flex-direction: column;
             z-index: 9999999;
-            display: none;
 
 
             .nav-item{
@@ -51,7 +52,12 @@
             .nav-link{
                 text-align: right;
             }
+
         }
+        
+
+
+
     }
 
     .bars-ico{
@@ -107,6 +113,9 @@
     }
     .col{
         flex: 0 0 auto !important;
-        // min-height: 30vh;
     }
+}
+
+.active-menu{
+    right: 0 !important;
 }
