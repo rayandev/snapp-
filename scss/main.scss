@@ -24,7 +24,7 @@
         }
 
 
-        @include xxx(){
+        @include Large(){
             width: 100%;
             max-width: 500px;
             height: 100vh;
@@ -53,13 +53,13 @@
         cursor: pointer;
         display: none;
 
-        @include xxx(){
+        @include Large(){
             display: flex;
         }
     }
 
-    @include xxx(){
+    @include Large(){
         justify-content: space-between;
         align-items: center;
-    }
+    }  
 }

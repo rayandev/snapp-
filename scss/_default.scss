@@ -47,16 +47,20 @@ li{
     list-style: none;
 }
 
-.d-none{
-    display: none;
-}
-
 .container {
     padding-left: 15rem !important;
     padding-right: 15rem !important;
 
-    @include xxx(){
+    @include XX-Large(){
+        padding-left: 10rem !important;
+        padding-right: 10rem !important;
+    }
+    @include X-Large(){
         padding-left: 2rem !important;
         padding-right: 2rem !important;
     }
+    @include Large(){ 
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    } 
 }
