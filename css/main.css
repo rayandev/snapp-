@@ -31,10 +31,11 @@ body {
 
 .row {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .col {
-  flex: 0 0 auto;
+  flex: 0 0 50%;
 }
 
 a {
@@ -128,4 +129,24 @@ li {
     justify-content: space-between;
     align-items: center;
   }
+}
+
+.experience-sec {
+  height: 55vh;
+  background-color: #2ecc71;
+}
+.experience-sec .top-img-box {
+  background-image: url("../img/intro_desktop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.experience-sec .top-exp-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: max(140px, 15%) !important;
+}
+.experience-sec .top-exp-content .content {
+  padding: 32px 0 32px 24px;
 }/*# sourceMappingURL=main.css.map */

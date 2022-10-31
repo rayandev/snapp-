@@ -33,10 +33,11 @@ body{
 
 .row{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .col{
-    flex: 0 0 auto;
+    flex: 0 0 50%;
 }
 
 a{
