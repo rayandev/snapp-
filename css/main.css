@@ -69,10 +69,15 @@ li {
 }
 
 #header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   background-color: #fff;
   display: flex;
   justify-content: flex-start;
   padding: 2rem 0;
+  z-index: 9999999;
 }
 #header .menu-area {
   display: flex;
