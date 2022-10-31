@@ -1,0 +1,65 @@
+@import './mobile';
+@import './default';
+
+
+#header{
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    padding: 2rem 0;
+
+    .menu-area{
+        display: flex;
+        align-items: center;
+
+        .nav-item{
+            margin-right: 32px;
+        }
+
+        .nav-link{
+            font-size: 14px;
+            font-weight: 400;
+            color: #3F3F3F;
+            cursor: pointer;
+        }
+
+
+        @include xxx(){
+            width: 100%;
+            max-width: 500px;
+            height: 100vh;
+            background-color: #fff;
+            position: fixed;
+            top: 90px;
+            right: 0;
+            flex-direction: column;
+            z-index: 9999999;
+
+
+            .nav-item{
+                width: 100%;
+                margin-right: 0;
+                padding: 20px;
+            }
+
+            .nav-link{
+                text-align: right;
+            }
+        }
+    }
+
+    .bars-ico{
+        font-size: 18px;
+        cursor: pointer;
+        display: none;
+
+        @include xxx(){
+            display: flex;
+        }
+    }
+
+    @include xxx(){
+        justify-content: space-between;
+        align-items: center;
+    }
+}

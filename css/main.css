@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "IRANSans";
+  src: url("../fonts/IRANSans/IRANSans-Bold-web.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "IRANSans";
+  src: url("../fonts/IRANSans/IRANSans-UltraLight-web.ttf");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "IRANSans";
+  src: url("../fonts/IRANSans/IRANSans-web.ttf");
+}
+@font-face {
+  font-family: "IRANSans";
+  src: url("../fonts/IRANSans/IRANSans-Medium-web.ttf");
+  font-weight: 600;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s linear;
+}
+
+body {
+  font-family: "IRANSans";
+  overflow: hidden;
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  flex: 0 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.d-none {
+  display: none;
+}
+
+.container {
+  padding-left: 15rem !important;
+  padding-right: 15rem !important;
+}
+@media screen and (max-width: 992px) {
+  .container {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+}
+
+#header {
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  padding: 2rem 0;
+}
+#header .menu-area {
+  display: flex;
+  align-items: center;
+}
+#header .menu-area .nav-item {
+  margin-right: 32px;
+}
+#header .menu-area .nav-link {
+  font-size: 14px;
+  font-weight: 400;
+  color: #3F3F3F;
+  cursor: pointer;
+}
+@media screen and (max-width: 992px) {
+  #header .menu-area {
+    width: 100%;
+    max-width: 500px;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    top: 90px;
+    right: 0;
+    flex-direction: column;
+    z-index: 9999999;
+  }
+  #header .menu-area .nav-item {
+    width: 100%;
+    margin-right: 0;
+    padding: 20px;
+  }
+  #header .menu-area .nav-link {
+    text-align: right;
+  }
+}
+#header .bars-ico {
+  font-size: 18px;
+  cursor: pointer;
+  display: none;
+}
+@media screen and (max-width: 992px) {
+  #header .bars-ico {
+    display: flex;
+  }
+}
+@media screen and (max-width: 992px) {
+  #header {
+    justify-content: space-between;
+    align-items: center;
+  }
+}/*# sourceMappingURL=main.css.map */
