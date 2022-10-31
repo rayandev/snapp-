@@ -150,4 +150,17 @@ li {
 }
 .experience-sec .top-exp-content .content {
   padding: 32px 0 32px 24px;
+}
+
+.download-section {
+  justify-content: center;
+  align-items: center;
+  gap: 6.5rem;
+  min-height: 30vh;
+}
+.download-section img {
+  width: 160px;
+}
+.download-section .col {
+  flex: 0 0 auto !important;
 }/*# sourceMappingURL=main.css.map */

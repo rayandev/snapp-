@@ -95,3 +95,18 @@
         }
     }
 }
+
+
+.download-section{
+    justify-content: center;
+    align-items: center;
+    gap: 6.5rem;
+    min-height: 30vh;
+    img{
+        width: 160px;
+    }
+    .col{
+        flex: 0 0 auto !important;
+        // min-height: 30vh;
+    }
+}
