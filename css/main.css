@@ -132,8 +132,13 @@ li {
 }
 
 .experience-sec {
-  height: 55vh;
+  height: 70vh;
   background-color: #2ecc71;
+}
+@media screen and (max-width: 992px) {
+  .experience-sec .col {
+    flex: 1 1 100%;
+  }
 }
 .experience-sec .top-img-box {
   background-image: url("../img/intro_desktop.jpg");
@@ -141,14 +146,39 @@ li {
   background-repeat: no-repeat;
   background-position: top center;
 }
+@media screen and (max-width: 992px) {
+  .experience-sec .top-img-box {
+    order: 1;
+    height: 60%;
+  }
+}
 .experience-sec .top-exp-content {
+  background-color: crimson;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-right: max(140px, 15%) !important;
 }
 .experience-sec .top-exp-content .content {
   padding: 32px 0 32px 24px;
+}
+@media screen and (max-width: 992px) {
+  .experience-sec .top-exp-content .content {
+    padding: 0px !important;
+  }
+}
+@media screen and (max-width: 992px) {
+  .experience-sec .top-exp-content {
+    order: 2;
+    padding: 0 !important;
+    height: 40%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .experience-sec .top-exp-content {
+    height: auto;
+  }
 }
 
 .download-section {

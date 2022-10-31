@@ -79,8 +79,14 @@
 
 
 .experience-sec{
-    height: 55vh;
+    height: 70vh;
     background-color: #2ecc71;
+
+    .col{
+        @include Large{
+            flex: 1 1 100%;
+        }
+    }
 
 
     .top-img-box{
@@ -88,18 +94,41 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: top center;
+        @include Large{
+            order: 1;
+            height: 60%;
+        }
     }
 
     .top-exp-content{
+        background-color: crimson;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         padding-right: max(140px,15%)!important;
 
+
         .content{
             padding: 32px 0 32px 24px;
+
+            @include Large{
+               padding: 0px !important;
+            }
+        }
+
+        @include Large{
+            order: 2;
+            padding: 0 !important;
+            height: 40%;
+        }
+
+        @include Medium{
+            height: auto;
         }
     }
+
+
 }
 
 
@@ -113,6 +142,8 @@
     }
     .col{
         flex: 0 0 auto !important;
+
+
     }
 }
 
