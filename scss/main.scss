@@ -257,10 +257,10 @@
 .download-section{
     justify-content: center;
     align-items: center;
-    gap: 6.5rem;
+    gap: 5rem;
     height: 30vh;
     img{
-        max-width: 160px;
+        max-width: 150px;
         height: auto;
     }
     .col{
@@ -277,6 +277,16 @@
 
     @include Large{
         display: none;
+    }
+}
+
+
+.service-section{
+    padding: 30px 0;
+    background-color: #f2f5f8;
+    text-align: center;
+    h2{
+        font-size: 32px;
     }
 }
 

@@ -340,11 +340,11 @@ li {
 .download-section {
   justify-content: center;
   align-items: center;
-  gap: 6.5rem;
+  gap: 5rem;
   height: 30vh;
 }
 .download-section img {
-  max-width: 160px;
+  max-width: 150px;
   height: auto;
 }
 .download-section .col {
@@ -364,4 +364,13 @@ li {
   .download-section {
     display: none;
   }
+}
+
+.service-section {
+  padding: 30px 0;
+  background-color: #f2f5f8;
+  text-align: center;
+}
+.service-section h2 {
+  font-size: 32px;
 }/*# sourceMappingURL=main.css.map */
