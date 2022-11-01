@@ -152,9 +152,14 @@ li {
   height: 60vh;
   background-color: #21aa58 !important;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1400px) {
   .experience-sec {
     height: 80vh;
+  }
+}
+@media screen and (max-width: 576px) {
+  .experience-sec {
+    height: 85vh;
   }
 }
 @media screen and (max-width: 992px) {
@@ -181,8 +186,23 @@ li {
   align-items: center;
   padding-right: max(140px, 15%) !important;
 }
+@media screen and (max-width: 992px) {
+  .experience-sec .top-exp-content {
+    justify-content: center;
+    align-items: center;
+  }
+}
 .experience-sec .top-exp-content .content {
   padding: 32px 0 32px 24px;
+}
+@media screen and (max-width: 992px) {
+  .experience-sec .top-exp-content .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 15px;
+  }
 }
 .experience-sec .top-exp-content .content h1 {
   color: #fff;
@@ -190,11 +210,33 @@ li {
   font-size: 30px;
   margin-bottom: 2.5rem;
 }
+@media screen and (max-width: 992px) {
+  .experience-sec .top-exp-content .content h1 {
+    margin-bottom: 0.5rem !important;
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .experience-sec .top-exp-content .content h1 {
+    font-size: 18px;
+  }
+}
 .experience-sec .top-exp-content .content p {
   font-weight: 400;
   font-size: 18px;
   color: #fff;
   margin-bottom: 1.5rem;
+}
+@media screen and (max-width: 992px) {
+  .experience-sec .top-exp-content .content p {
+    margin-bottom: 0.5rem !important;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .experience-sec .top-exp-content .content p {
+    font-size: 12px;
+  }
 }
 .experience-sec .top-exp-content .content .btn-sen-tell {
   color: #2ecc71;
@@ -215,20 +257,36 @@ li {
   font-weight: bold;
   font-size: 15px;
 }
+.experience-sec .top-exp-content .content .btn-login-pwa:hover {
+  background-color: rgba(255, 255, 255, 0.123);
+}
+@media screen and (max-width: 992px) {
+  .experience-sec .top-exp-content .content .btn-login-pwa {
+    width: 90%;
+    margin-top: 0.5rem;
+    background-color: #fff;
+    color: black;
+    font-size: 12px !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .experience-sec .top-exp-content .content .btn-login-pwa {
+    font-size: 12px !important;
+  }
+}
 .experience-sec .top-exp-content .content .circle {
   width: 8px;
   height: 8px;
   background-color: #fff;
   border-radius: 50%;
 }
-.experience-sec .top-exp-content .content .inputBox {
+.experience-sec .top-exp-content .content .send-tell .inputBox {
   border-bottom: 1px solid #fff;
-  color: #fff;
   width: 300px;
   display: flex;
   align-items: center;
 }
-.experience-sec .top-exp-content .content .inputBox .input-number {
+.experience-sec .top-exp-content .content .send-tell .inputBox .input-number {
   width: 95%;
   height: 100%;
   background-color: transparent;
@@ -238,28 +296,29 @@ li {
   font-size: 18px;
   direction: ltr;
   caret-color: rgba(255, 255, 255, 0.74);
+  color: #fff;
 }
-.experience-sec .top-exp-content .content .inputBox .input-number::-moz-placeholder {
+.experience-sec .top-exp-content .content .send-tell .inputBox .input-number::-moz-placeholder {
   color: rgba(255, 255, 255, 0.74);
   font-size: 14px;
   text-align: right;
   font-family: "IRANSans";
 }
-.experience-sec .top-exp-content .content .inputBox .input-number:-ms-input-placeholder {
+.experience-sec .top-exp-content .content .send-tell .inputBox .input-number:-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.74);
   font-size: 14px;
   text-align: right;
   font-family: "IRANSans";
 }
-.experience-sec .top-exp-content .content .inputBox .input-number::placeholder {
+.experience-sec .top-exp-content .content .send-tell .inputBox .input-number::placeholder {
   color: rgba(255, 255, 255, 0.74);
   font-size: 14px;
   text-align: right;
   font-family: "IRANSans";
 }
 @media screen and (max-width: 992px) {
-  .experience-sec .top-exp-content .content {
-    padding: 0px !important;
+  .experience-sec .top-exp-content .content .send-tell {
+    display: none;
   }
 }
 @media screen and (max-width: 992px) {
@@ -270,7 +329,7 @@ li {
 }
 @media screen and (max-width: 768px) {
   .experience-sec .top-exp-content {
-    height: auto;
+    height: auto !important;
   }
 }
 
