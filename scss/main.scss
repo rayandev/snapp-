@@ -284,9 +284,55 @@
 .service-section{
     padding: 30px 0;
     background-color: #f2f5f8;
+    color: #404040;
     text-align: center;
+    .row{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+
+        .col {
+            flex: 0 0 auto;
+        }
+    }
+
     h2{
         font-size: 32px;
+        margin-bottom: 2.5rem;
+    }
+
+    .service-box{
+        width: 300px;
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        &:not(:first-child){
+            margin-top: 2rem;
+        }
+
+        img{
+            width: 60px;
+            height: auto;
+        }
+
+        .service-content{
+            margin-right: 0.5rem;
+            text-align: right !important;
+
+            h3{
+                font-size: 16px;
+                color: #3F3F3F;
+            }
+
+            p{
+                font-size: 14px;
+                color: #A3A3A3;
+            }
+        }
     }
 }
 
