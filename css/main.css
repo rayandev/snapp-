@@ -333,19 +333,35 @@ li {
   }
 }
 
+.active-menu {
+  right: 0 !important;
+}
+
 .download-section {
   justify-content: center;
   align-items: center;
   gap: 6.5rem;
-  min-height: 30vh;
+  height: 30vh;
 }
 .download-section img {
-  width: 160px;
+  max-width: 160px;
+  height: auto;
 }
 .download-section .col {
-  flex: 0 0 auto !important;
+  flex: 0 0 10% !important;
 }
-
-.active-menu {
-  right: 0 !important;
+@media screen and (max-width: 1400px) {
+  .download-section {
+    gap: 4rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .download-section {
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .download-section {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */

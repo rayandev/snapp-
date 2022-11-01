@@ -250,22 +250,33 @@
 
 }
 
+.active-menu{
+    right: 0 !important;
+}
 
 .download-section{
     justify-content: center;
     align-items: center;
     gap: 6.5rem;
-    min-height: 30vh;
+    height: 30vh;
     img{
-        width: 160px;
+        max-width: 160px;
+        height: auto;
     }
     .col{
-        flex: 0 0 auto !important;
+        flex: 0 0 10% !important;
+    }
 
+    @include XX-Large{
+        gap: 4rem;
+    }
 
+    @include X-Large{
+        gap: 2rem;
+    }
+
+    @include Large{
+        display: none;
     }
 }
 
-.active-menu{
-    right: 0 !important;
-}
