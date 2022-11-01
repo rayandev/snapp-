@@ -48,6 +48,22 @@ li{
     list-style: none;
 }
 
+.btn{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: "IRANSans";
+}
+
+.gp-1{
+    gap: 1rem;
+}
+.mb-1{
+    margin-bottom: 1.5rem;
+}
+
 .container {
     padding-left: 15rem !important;
     padding-right: 15rem !important;
