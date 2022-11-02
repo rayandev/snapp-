@@ -377,7 +377,7 @@
     justify-content: center;
     align-items: center;
     .col{
-        flex: 0 0 80%;
+        flex: 0 0 78%;
     }
     .order-box{
         border-radius: 15px;
@@ -391,4 +391,44 @@
         display: none;
     }
 }
+
+.property-section{
+    margin-top: 20px;
+    .superapp{
+        height: 45vh;
+        .superapp-left{
+            background-image: url('../img/super-app.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            overflow: hidden;
+        }
+
+        .superapp-right{
+            padding: 50px;
+
+            h2{
+                font-size: 21px;
+                margin-bottom: 35px;
+                color: #404040;
+            }
+
+            p{
+                white-space: pre-wrap;
+                font-size: 13px;
+                line-height: 2;
+                font-weight: 300;
+                width: 75%;
+            }
+        }
+
+        @include Large{
+            .col{
+                flex: 0 0 100%;
+            }
+        }
+        
+    }
+}
+
 

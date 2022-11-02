@@ -464,7 +464,7 @@ li {
   align-items: center;
 }
 .order-section .col {
-  flex: 0 0 80%;
+  flex: 0 0 78%;
 }
 .order-section .order-box {
   border-radius: 15px;
@@ -476,5 +476,39 @@ li {
 @media screen and (max-width: 768px) {
   .order-section {
     display: none;
+  }
+}
+
+.property-section {
+  margin-top: 20px;
+}
+.property-section .superapp {
+  height: 45vh;
+}
+.property-section .superapp .superapp-left {
+  background-image: url("../img/super-app.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
+}
+.property-section .superapp .superapp-right {
+  padding: 50px;
+}
+.property-section .superapp .superapp-right h2 {
+  font-size: 21px;
+  margin-bottom: 35px;
+  color: #404040;
+}
+.property-section .superapp .superapp-right p {
+  white-space: pre-wrap;
+  font-size: 13px;
+  line-height: 2;
+  font-weight: 300;
+  width: 75%;
+}
+@media screen and (max-width: 992px) {
+  .property-section .superapp .col {
+    flex: 0 0 100%;
   }
 }/*# sourceMappingURL=main.css.map */
