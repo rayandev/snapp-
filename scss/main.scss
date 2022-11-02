@@ -392,6 +392,8 @@
     }
 }
 
+
+
 .property-section{
     margin-top: 20px;
     .superapp{
@@ -402,10 +404,15 @@
             background-repeat: no-repeat;
             background-position: center center;
             overflow: hidden;
+
+            @include Large{
+                height: 30vh;
+            }
         }
 
         .superapp-right{
             padding: 50px;
+            text-align: right;
 
             h2{
                 font-size: 21px;
@@ -419,6 +426,19 @@
                 line-height: 2;
                 font-weight: 300;
                 width: 75%;
+
+                @include Large{
+                    width: 100%;
+                }
+            }
+
+            @include Large{
+                padding: 0 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                margin-top: 25px;
             }
         }
 

@@ -492,8 +492,14 @@ li {
   background-position: center center;
   overflow: hidden;
 }
+@media screen and (max-width: 992px) {
+  .property-section .superapp .superapp-left {
+    height: 30vh;
+  }
+}
 .property-section .superapp .superapp-right {
   padding: 50px;
+  text-align: right;
 }
 .property-section .superapp .superapp-right h2 {
   font-size: 21px;
@@ -506,6 +512,21 @@ li {
   line-height: 2;
   font-weight: 300;
   width: 75%;
+}
+@media screen and (max-width: 992px) {
+  .property-section .superapp .superapp-right p {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .property-section .superapp .superapp-right {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 25px;
+  }
 }
 @media screen and (max-width: 992px) {
   .property-section .superapp .col {
