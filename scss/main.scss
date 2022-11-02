@@ -370,3 +370,25 @@
     }
 }
 
+
+.order-section{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .col{
+        flex: 0 0 80%;
+    }
+    .order-box{
+        border-radius: 15px;
+        height: 45vh;
+        background-image: url('../img/Food.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    @include Medium{
+        display: none;
+    }
+}
+

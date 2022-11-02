@@ -455,4 +455,26 @@ li {
   .service-section .service-box {
     width: 120px;
   }
+}
+
+.order-section {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.order-section .col {
+  flex: 0 0 80%;
+}
+.order-section .order-box {
+  border-radius: 15px;
+  height: 45vh;
+  background-image: url("../img/Food.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width: 768px) {
+  .order-section {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
