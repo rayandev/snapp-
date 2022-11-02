@@ -286,9 +286,26 @@
     background-color: #f2f5f8;
     color: #404040;
     text-align: center;
+
+    @include Large{
+        width: 230px;
+    }
+
+    @include Medium{
+        width: 170px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @include Small{
+        width: 120px;
+    }
+
+    
     .row{
         flex-wrap: nowrap;
-        flex-direction: row;
+        flex-direction: row-reverse;
         justify-content: center;
         align-items: flex-start;
         gap: 2rem;
@@ -320,7 +337,7 @@
         }
 
         img{
-            width: 55px;
+            width: 60px;
             height: auto;
 
             @include Medium{
@@ -352,20 +369,7 @@
             }
         }
 
-        @include Large{
-            width: 230px;
-        }
 
-        @include Medium{
-            width: 170px;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        @include Small{
-            width: 120px;
-        }
     }
 }
 
