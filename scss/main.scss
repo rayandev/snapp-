@@ -282,18 +282,23 @@
 
 
 .service-section{
-    padding: 30px 0;
+    padding: 30px;
     background-color: #f2f5f8;
     color: #404040;
     text-align: center;
     .row{
+        flex-wrap: nowrap;
         flex-direction: row;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         gap: 2rem;
 
         .col {
             flex: 0 0 auto;
+        }
+
+        @include Small{
+            flex-wrap: wrap;
         }
     }
 
@@ -305,7 +310,7 @@
     .service-box{
         width: 300px;
         background-color: #fff;
-        border-radius: 8px;
+        border-radius: 25px;
         padding: 8px;
         display: flex;
         align-items: center;
@@ -315,8 +320,12 @@
         }
 
         img{
-            width: 60px;
+            width: 55px;
             height: auto;
+
+            @include Medium{
+                width: 45px;
+            }
         }
 
         .service-content{
@@ -324,14 +333,38 @@
             text-align: right !important;
 
             h3{
-                font-size: 16px;
+                font-size: 14px;
                 color: #3F3F3F;
+                @include Large{
+                    font-size: 12px;
+                    text-align: center;
+                    margin-top: 0.5rem;
+                }
             }
 
             p{
-                font-size: 14px;
+                font-size: 13px;
+                font-weight: 300;
                 color: #A3A3A3;
+                @include Medium{
+                    display: none;
+                }
             }
+        }
+
+        @include Large{
+            width: 230px;
+        }
+
+        @include Medium{
+            width: 170px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @include Small{
+            width: 120px;
         }
     }
 }
