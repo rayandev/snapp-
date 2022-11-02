@@ -480,6 +480,7 @@ li {
 }
 
 .property-section {
+  position: relative;
   margin-top: 20px;
 }
 .property-section .superapp {
@@ -531,5 +532,68 @@ li {
 @media screen and (max-width: 992px) {
   .property-section .superapp .col {
     flex: 0 0 100%;
+  }
+}
+.property-section .features {
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  right: 0;
+}
+.property-section .features .row {
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+.property-section .features .col {
+  flex: 0 0 auto;
+}
+@media screen and (max-width: 992px) {
+  .property-section .features .col {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.property-section .features .feature-box {
+  width: 330px;
+  height: 30vh;
+}
+.property-section .features .feature-box .feature-img {
+  border-radius: 15px 15px 0 0;
+  background-color: #F2F5F8;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.property-section .features .feature-box .feature-content h3 {
+  font-size: 16px;
+  margin: 1rem 0;
+}
+.property-section .features .feature-box .feature-content p {
+  font-size: 12px;
+  font-weight: 300;
+}
+@media screen and (max-width: 1200px) {
+  .property-section .features .feature-box {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .property-section .features .feature-box {
+    width: 220px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .property-section .features {
+    position: relative;
+    top: 5rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .property-section .features {
+    top: 10rem;
   }
 }/*# sourceMappingURL=main.css.map */

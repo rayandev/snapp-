@@ -395,9 +395,12 @@
 
 
 .property-section{
+    position: relative;
     margin-top: 20px;
+
     .superapp{
         height: 45vh;
+
         .superapp-left{
             background-image: url('../img/super-app.jpg');
             background-size: cover;
@@ -448,6 +451,73 @@
             }
         }
         
+    }
+
+
+    .features{
+        position: absolute;
+        bottom: -50%;
+        left: 0;
+        right: 0;
+
+        .row{
+            justify-content: center;
+            align-items: center;
+            gap: 4rem;
+        }
+
+        .col{
+            flex: 0 0 auto;
+
+            @include Large{
+                flex: 0 0 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        .feature-box{
+            width: 330px;
+            height: 30vh;
+
+            .feature-img{
+                border-radius: 15px 15px 0 0;
+                background-color: #F2F5F8;
+                height: 20vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .feature-content{
+                h3{
+                    font-size: 16px;
+                    margin: 1rem 0;
+                }
+                p{
+                    font-size: 12px;
+                    font-weight: 300;
+                }
+            }
+
+            @include X-Large{
+                width: 250px;
+            }
+
+            @include Large{
+                width: 220px;
+            }
+        }
+
+        @include X-Large{
+            position: relative;
+            top: 5rem;
+        }
+
+        @include Large{
+            top: 10rem;
+        }
     }
 }
 
