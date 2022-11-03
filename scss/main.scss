@@ -561,8 +561,23 @@
 
         video{
             width: 100%;
-
+            border-radius: 10px;
         }
+    }
+
+    @include X-Large{
+        padding-left: 85px;
+        padding-right: 85px;
+    }
+
+    @include Large{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    @include Medium{
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 

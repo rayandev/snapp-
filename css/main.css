@@ -633,4 +633,23 @@ li {
 }
 .ad-section .video-area video {
   width: 100%;
+  border-radius: 10px;
+}
+@media screen and (max-width: 1200px) {
+  .ad-section {
+    padding-left: 85px;
+    padding-right: 85px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .ad-section {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .ad-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }/*# sourceMappingURL=main.css.map */
