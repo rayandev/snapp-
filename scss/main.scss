@@ -650,6 +650,11 @@
     .row{
         justify-content: space-between;
         align-items: center;
+
+        @include Medium {
+            justify-content: center;
+            align-items: center;
+        }
     }
 
     .footer-social-area , .footer-menu-area{
@@ -659,12 +664,24 @@
         li a{
             font-size: 14px;
             color: #404040;
+
+            @include Medium{
+                font-size: 10px;
+            }
+        }
+    }
+
+    .footer-social-area{
+        @include Large{
+            margin-top: 1.5rem;
         }
     }
 
 
     @include Large{
         flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 

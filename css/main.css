@@ -717,6 +717,12 @@ li {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  #footer .row {
+    justify-content: center;
+    align-items: center;
+  }
+}
 #footer .footer-social-area, #footer .footer-menu-area {
   display: flex;
   gap: 1.2rem;
@@ -725,8 +731,20 @@ li {
   font-size: 14px;
   color: #404040;
 }
+@media screen and (max-width: 768px) {
+  #footer .footer-social-area li a, #footer .footer-menu-area li a {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #footer .footer-social-area {
+    margin-top: 1.5rem;
+  }
+}
 @media screen and (max-width: 992px) {
   #footer {
     flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }/*# sourceMappingURL=main.css.map */
