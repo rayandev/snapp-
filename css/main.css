@@ -704,4 +704,11 @@ li {
     padding-left: 20px;
     padding-right: 20px;
   }
+}
+
+#footer {
+  position: relative;
+  bottom: -270px;
+  padding: 40px 11%;
+  background-color: #fff;
 }/*# sourceMappingURL=main.css.map */
