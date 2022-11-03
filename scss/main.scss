@@ -645,5 +645,26 @@
     bottom: -270px;
     padding: 40px 11%;
     background-color: #fff;
+    flex-direction: row;
+
+    .row{
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-social-area , .footer-menu-area{
+        display: flex;
+        gap: 1.2rem;
+
+        li a{
+            font-size: 14px;
+            color: #404040;
+        }
+    }
+
+
+    @include Large{
+        flex-direction: column;
+    }
 }
 

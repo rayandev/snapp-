@@ -711,4 +711,22 @@ li {
   bottom: -270px;
   padding: 40px 11%;
   background-color: #fff;
+  flex-direction: row;
+}
+#footer .row {
+  justify-content: space-between;
+  align-items: center;
+}
+#footer .footer-social-area, #footer .footer-menu-area {
+  display: flex;
+  gap: 1.2rem;
+}
+#footer .footer-social-area li a, #footer .footer-menu-area li a {
+  font-size: 14px;
+  color: #404040;
+}
+@media screen and (max-width: 992px) {
+  #footer {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=main.css.map */
