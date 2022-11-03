@@ -565,6 +565,49 @@
         }
     }
 
+    .ad-bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 6rem;
+
+        .row{
+            gap: 1.4rem;
+        }
+
+        .ad-box{
+            background-color: #fff;
+            width: 655px;
+            height: 200px;
+            padding: 30px;
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+
+            .ad-box-img{
+                height: 200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // background-color: gray;
+            }
+
+            .ad-box-content{
+                h3{
+                    font-size: 14px;
+                    font-weight: 700;
+                    text-align: right;
+                }
+
+                p{
+                    font-size: 12px;
+                    text-align: right;
+                    line-height: 2;
+                }
+            }
+        }
+    }
+
     @include X-Large{
         padding-left: 85px;
         padding-right: 85px;

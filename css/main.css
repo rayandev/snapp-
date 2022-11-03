@@ -635,6 +635,40 @@ li {
   width: 100%;
   border-radius: 10px;
 }
+.ad-section .ad-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6rem;
+}
+.ad-section .ad-bottom .row {
+  gap: 1.4rem;
+}
+.ad-section .ad-bottom .ad-box {
+  background-color: #fff;
+  width: 655px;
+  height: 200px;
+  padding: 30px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+}
+.ad-section .ad-bottom .ad-box .ad-box-img {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ad-section .ad-bottom .ad-box .ad-box-content h3 {
+  font-size: 14px;
+  font-weight: 700;
+  text-align: right;
+}
+.ad-section .ad-bottom .ad-box .ad-box-content p {
+  font-size: 12px;
+  text-align: right;
+  line-height: 2;
+}
 @media screen and (max-width: 1200px) {
   .ad-section {
     padding-left: 85px;
