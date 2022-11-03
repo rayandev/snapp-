@@ -481,6 +481,7 @@ li {
 
 .property-section {
   position: relative;
+  height: auto;
   margin-top: 20px;
 }
 .property-section .superapp {
@@ -573,8 +574,8 @@ li {
   margin: 1rem 0;
 }
 .property-section .features .feature-box .feature-content p {
-  font-size: 12px;
-  font-weight: 300;
+  font-size: 10px;
+  line-height: 1.8;
 }
 @media screen and (max-width: 1200px) {
   .property-section .features .feature-box {
@@ -596,4 +597,40 @@ li {
   .property-section .features {
     top: 10rem;
   }
+}
+
+.ad-section {
+  background-color: #f2f5f8;
+  position: relative;
+  bottom: -260px;
+  padding: 40px 285px;
+  text-align: center;
+}
+.ad-section h2, .ad-section p {
+  color: #404040;
+  text-align: center;
+}
+.ad-section h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+.ad-section p {
+  font-size: 17px;
+  padding: 16px 0;
+}
+.ad-section button {
+  background-color: #2ecc71;
+  color: #fff;
+  padding: 0 32px;
+  min-height: 48px;
+  margin: 16px 0;
+}
+.ad-section .video-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+.ad-section .video-area video {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
